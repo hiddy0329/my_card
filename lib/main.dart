@@ -14,39 +14,33 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              Container(
-                color: Colors.red,
-                width: 100.0,
-                height: 100.0,
+            child: Column(
+          children: <Widget>[
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage('images/hidai.jpg'),
+            ),
+            Text(
+              'Hidai Satoshi',
+              style: TextStyle(
+                fontFamily: 'Pacifico',
+                fontSize: 40.0,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
               ),
-              Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Container(
-                      color: Colors.yellow,
-                      width: 100.0,
-                      height: 100.0,
-                    ),
-                    Container(
-                      color: Colors.green,
-                      width: 100.0,
-                      height: 100.0,
-                    ),
-                  ],
-                ),
+            ),
+            Text(
+              'JUNIOR ENHINEER',
+              style: TextStyle(
+                fontFamily: 'SourceSansPro',
+                fontSize: 20.0,
+                color: Colors.teal[100],
+                fontWeight: FontWeight.bold,
+                letterSpacing: 2.5,
               ),
-              Container(
-                color: Colors.blue,
-                width: 100.0,
-              )
-            ],
-          ),
-        ),
+            )
+          ],
+        )),
       ),
     );
   }
